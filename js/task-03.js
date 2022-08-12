@@ -1,5 +1,4 @@
-const images = [
-  {
+const images = [{
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     alt: 'White and Black Long Fur Cat',
   },
@@ -12,3 +11,8 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryEl = document.querySelector('.gallery')
+
+const source = images.map(image => `<li class='item'><img src='${image.url}' alt='${image.alt}'></li>`).join('')
+galleryEl.insertAdjacentHTML('beforeend', source)
