@@ -1,6 +1,5 @@
 const inputRef = document.getElementById('name-input')
 const spanRef = document.getElementById('name-output')
-console.log(spanRef.textContent);
 
 inputRef.addEventListener('input', onInputChange)
 
