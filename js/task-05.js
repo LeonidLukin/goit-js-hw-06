@@ -11,7 +11,3 @@ function onInputChange() {
         spanRef.textContent = 'Anonymous'
     }
 }
-
-function onInputBlur() {
-    console.log('Интпут не в фокусе');
-}
